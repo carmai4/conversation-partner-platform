@@ -1,0 +1,97 @@
+﻿@model IEnumerable<CPP2.Rating>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Rate a Conversation Partner</h2>
+
+
+
+
+<p style="color:darkred"><br /><i>Here are your past ratings. 
+    <br />(Lowest 1 --------------- 5 Highest)</i><br />
+</p>
+
+<p>
+    <button>@Html.ActionLink("Create a new rating!", "Create")</button>
+</p>
+<table class="table">
+    
+    <!-- Add a column for "Last talked to" to be retreived from Session log table -->
+
+    <tr>
+        <th>
+            <!-- @Html.DisplayNameFor(model => model.RatedUserId) display Name instead of Id-->
+            Name
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CppUser.AspNetUser.Email)
+            
+        </th>
+        <th>
+            <!-- @Html.DisplayNameFor(model => model.InterestingScore) -->
+            Interesting
+        </th>
+        <th>
+            <!--@Html.DisplayNameFor(model => model.ComprehensibleScore)-->
+            Comprehensible
+        </th>
+        <th>
+            <!--@Html.DisplayNameFor(model => model.PolitenessScore)-->
+            Polite
+        </th>
+        <th>
+            <!-- @Html.DisplayNameFor(model => model.AverageScore)-->
+            Average
+        </th>
+        <th>
+            <!-- @Html.DisplayNameFor(model => model.Comment)-->
+            Comments
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @if(item.CppUser.Profiles.Count() > 0)
+            {
+                @Html.DisplayFor(modelItem => item.CppUser.Profiles.Single().FirstName)<br />
+                @Html.DisplayFor(modelItem => item.CppUser.Profiles.Single().LastName)
+            }
+            else
+            {
+                <p>User has no name</p>
+            }
+        </td>
+
+            <!-- do not display user id, show name instead@Html.DisplayFor(modelItem => item.RatedUserId) -->
+        
+     
+        <td>
+            @Html.DisplayFor(modelItem => item.CppUser.AspNetUser.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InterestingScore)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComprehensibleScore)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PolitenessScore)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AverageScore)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comment)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,76 @@
+﻿@model CPP2.Rating
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Rate a Conversation Partner!</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Rating</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <!-- show users' name instead of RatedUserId -->   
+            <div class="form-group">
+                @Html.LabelFor(model => model.RatedUserId, "I want to rate :", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("RatedUserId", (IEnumerable<SelectListItem>)ViewBag.CppUserList, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.CppUser, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <p><h4 style="color:darkred"><i>On a scale of 1 (lowest) to 5 (highest), give a rating for the following criteria.</i></h4></p>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.InterestingScore, "How interesting was your conversation?", htmlAttributes: new { @class = "control-label col-md-2" })
+                
+                <div class="col-md-10">
+                    @Html.DropDownList("InterestingScore", new SelectList(new[] { "1", "2", "3", "4", "5" }))
+                    <small><i>Example: '1' for a boring conversation; '5' for a very interesting conversation</i></small>
+                    @Html.ValidationMessageFor(model => model.InterestingScore, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ComprehensibleScore, "Was the conversation easy to understand?", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("ComprehensibleScore", new SelectList(new[] { "1", "2", "3", "4", "5" }))
+                    <small><i>Example: '1' if conversation partner spoke too fast or too slow, mumbled, heavy accent</i></small>
+
+                    @Html.ValidationMessageFor(model => model.ComprehensibleScore, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.PolitenessScore, "Was this user polite?", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("PolitenessScore", new SelectList(new[] { "1", "2", "3", "4", "5" }))
+                    <small><i>Example: '1' if conversation partner was rude, inappropriate; '5' for good etiquette </i></small>
+                    @Html.ValidationMessageFor(model => model.PolitenessScore, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Comment, "Comment (optional)", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Comment, new { htmlAttributes = new { @class = "form-control" } })
+                <small><i>any additional notes on this conversation partner</i></small>
+                @Html.ValidationMessageFor(model => model.Comment, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Submit this rating" class="btn btn-default" />
+            </div>
+        </div>
+</div>
+        }
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

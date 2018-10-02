@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "CPP Home";
+}
+
+
+
+<div class="jumbotron">
+    <img src="~/Content/United-Globe.png" width="200" height="200" alt="globe" />
+    <h2 style="font-family:'Bauhaus 93'"><b>CONVERSATION PARTNER PLATFORM (CPP)</b></h2>
+    <p class="lead" style="color:darkred">
+        Connecting ESL and EFL students with native English speakers.
+        <br />ODU CS411W Project by Spring 2017 Red Team
+        
+    </p>
+    <p><a href="http://cs.odu.edu/~411red" class="btn btn-primary btn-lg">Visit Team Site</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Our Mentor</h2>
+        <p>
+            <b>Mr. Greg Raver-Lampman</b>
+            <br />from ODU's English Language Center
+        </p>
+        <p><a class="btn btn-default" href="http://www.odu.edu/cepd/esl">English Language Center &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Who Needs CPP?</h2>
+        <p> 
+        <ul>
+            <li>ESL students at ODU</li>
+            <li>Native English speakers at ODU</li>
+            <li>ESL instructors at ODU</li>
+        
+        </ul>
+            <a class="btn btn-default" href="~/Views/Home/About.cshtml">About CPP</a>
+        </p>
+      
+    </div>
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <div class="col-md-4">
+        <h2><b>SIGN UP now!</b></h2>
+        <p>Sign up for CPP to start connecting with others.</p>
+        <p>
+            ("Register" in top right corner)
+        </p>
+         </div>
+    }
+
+</div>

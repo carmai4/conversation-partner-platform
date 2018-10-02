@@ -1,0 +1,1924 @@
+﻿@model CPP2.AvailabilitySchedule
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Id)
+    <table width="100%">
+        <tr>
+            <td> </td>
+
+
+            <td>@Html.Raw("1 am")</td>
+            <td>@Html.Raw("2 am")</td>
+            <td>@Html.Raw("3 am")</td>
+            <td>@Html.Raw("4 am")</td>
+            <td>@Html.Raw("5 am")</td>
+            <td>@Html.Raw("6 am")</td>
+            <td>@Html.Raw("7 am")</td>
+            <td>@Html.Raw("8 am")</td>
+            <td>@Html.Raw("9 am")</td>
+            <td>@Html.Raw("10 am")</td>
+            <td>@Html.Raw("11 am")</td>
+            <td>@Html.Raw("12 pm")</td>
+            <td>@Html.Raw("1 pm")</td>
+            <td>@Html.Raw("2 pm")</td>
+            <td>@Html.Raw("3 pm")</td>
+            <td>@Html.Raw("4 pm")</td>
+            <td>@Html.Raw("5 pm")</td>
+            <td>@Html.Raw("6 pm")</td>
+            <td>@Html.Raw("7 pm")</td>
+            <td>@Html.Raw("8 pm")</td>
+            <td>@Html.Raw("9 pm")</td>
+            <td>@Html.Raw("10 pm")</td>
+            <td>@Html.Raw("11 pm")</td>
+            <td>@Html.Raw("12 am")</td>
+
+
+        </tr>
+        <tr>
+            <td>@Html.Raw("Sunday")</td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday0)
+                            @Html.ValidationMessageFor(model => model.Sunday0, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday1)
+                            @Html.ValidationMessageFor(model => model.Sunday1, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday2)
+                            @Html.ValidationMessageFor(model => model.Sunday2, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday3)
+                            @Html.ValidationMessageFor(model => model.Sunday3, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday4)
+                            @Html.ValidationMessageFor(model => model.Sunday4, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday5)
+                            @Html.ValidationMessageFor(model => model.Sunday5, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday6)
+                            @Html.ValidationMessageFor(model => model.Sunday6, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday7)
+                            @Html.ValidationMessageFor(model => model.Sunday7, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday8)
+                            @Html.ValidationMessageFor(model => model.Sunday8, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday9)
+                            @Html.ValidationMessageFor(model => model.Sunday9, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday10)
+                            @Html.ValidationMessageFor(model => model.Sunday10, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday11)
+                            @Html.ValidationMessageFor(model => model.Sunday11, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday12)
+                            @Html.ValidationMessageFor(model => model.Sunday12, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday13)
+                            @Html.ValidationMessageFor(model => model.Sunday13, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday14)
+                            @Html.ValidationMessageFor(model => model.Sunday14, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday15)
+                            @Html.ValidationMessageFor(model => model.Sunday15, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday16)
+                            @Html.ValidationMessageFor(model => model.Sunday16, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday17)
+                            @Html.ValidationMessageFor(model => model.Sunday17, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday18)
+                            @Html.ValidationMessageFor(model => model.Sunday18, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday19)
+                            @Html.ValidationMessageFor(model => model.Sunday19, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday20)
+                            @Html.ValidationMessageFor(model => model.Sunday20, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday21)
+                            @Html.ValidationMessageFor(model => model.Sunday21, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday22)
+                            @Html.ValidationMessageFor(model => model.Sunday22, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sunday23)
+                            @Html.ValidationMessageFor(model => model.Sunday23, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+        <tr>
+
+            <td>@Html.Raw("Monday")</td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon0)
+                            @Html.ValidationMessageFor(model => model.Mon0, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon1)
+                            @Html.ValidationMessageFor(model => model.Mon1, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon2)
+                            @Html.ValidationMessageFor(model => model.Mon2, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon3)
+                            @Html.ValidationMessageFor(model => model.Mon3, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon4)
+                            @Html.ValidationMessageFor(model => model.Mon4, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon5)
+                            @Html.ValidationMessageFor(model => model.Mon5, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon6)
+                            @Html.ValidationMessageFor(model => model.Mon6, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon7)
+                            @Html.ValidationMessageFor(model => model.Mon7, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon8)
+                            @Html.ValidationMessageFor(model => model.Mon8, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon9)
+                            @Html.ValidationMessageFor(model => model.Mon9, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon10)
+                            @Html.ValidationMessageFor(model => model.Mon10, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon11)
+                            @Html.ValidationMessageFor(model => model.Mon11, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon12)
+                            @Html.ValidationMessageFor(model => model.Mon12, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon13)
+                            @Html.ValidationMessageFor(model => model.Mon13, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon14)
+                            @Html.ValidationMessageFor(model => model.Mon14, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon15)
+                            @Html.ValidationMessageFor(model => model.Mon15, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon16)
+                            @Html.ValidationMessageFor(model => model.Mon16, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon17)
+                            @Html.ValidationMessageFor(model => model.Mon17, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon18)
+                            @Html.ValidationMessageFor(model => model.Mon18, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon19)
+                            @Html.ValidationMessageFor(model => model.Mon19, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon20)
+                            @Html.ValidationMessageFor(model => model.Mon20, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon21)
+                            @Html.ValidationMessageFor(model => model.Mon21, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon22)
+                            @Html.ValidationMessageFor(model => model.Mon22, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Mon23)
+                            @Html.ValidationMessageFor(model => model.Mon23, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.Raw("Tuesday")</td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue0)
+                            @Html.ValidationMessageFor(model => model.Tue0, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue1)
+                            @Html.ValidationMessageFor(model => model.Tue1, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue2)
+                            @Html.ValidationMessageFor(model => model.Tue2, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue3)
+                            @Html.ValidationMessageFor(model => model.Tue3, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue4)
+                            @Html.ValidationMessageFor(model => model.Tue4, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue5)
+                            @Html.ValidationMessageFor(model => model.Tue5, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue6)
+                            @Html.ValidationMessageFor(model => model.Tue6, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue7)
+                            @Html.ValidationMessageFor(model => model.Tue7, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue8)
+                            @Html.ValidationMessageFor(model => model.Tue8, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue9)
+                            @Html.ValidationMessageFor(model => model.Tue9, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue10)
+                            @Html.ValidationMessageFor(model => model.Tue10, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue11)
+                            @Html.ValidationMessageFor(model => model.Tue11, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue12)
+                            @Html.ValidationMessageFor(model => model.Tue12, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue13)
+                            @Html.ValidationMessageFor(model => model.Tue13, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue14)
+                            @Html.ValidationMessageFor(model => model.Tue14, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue15)
+                            @Html.ValidationMessageFor(model => model.Tue15, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue16)
+                            @Html.ValidationMessageFor(model => model.Tue16, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue17)
+                            @Html.ValidationMessageFor(model => model.Tue17, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue18)
+                            @Html.ValidationMessageFor(model => model.Tue18, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue19)
+                            @Html.ValidationMessageFor(model => model.Tue19, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue20)
+                            @Html.ValidationMessageFor(model => model.Tue20, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue21)
+                            @Html.ValidationMessageFor(model => model.Tue21, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue22)
+                            @Html.ValidationMessageFor(model => model.Tue22, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Tue23)
+                            @Html.ValidationMessageFor(model => model.Tue23, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.Raw("Wednesday")</td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed0)
+                            @Html.ValidationMessageFor(model => model.Wed0, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed1)
+                            @Html.ValidationMessageFor(model => model.Wed1, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed2)
+                            @Html.ValidationMessageFor(model => model.Wed2, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed3)
+                            @Html.ValidationMessageFor(model => model.Wed3, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed4)
+                            @Html.ValidationMessageFor(model => model.Wed4, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed5)
+                            @Html.ValidationMessageFor(model => model.Wed5, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed6)
+                            @Html.ValidationMessageFor(model => model.Wed6, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed7)
+                            @Html.ValidationMessageFor(model => model.Wed7, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed8)
+                            @Html.ValidationMessageFor(model => model.Wed8, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed9)
+                            @Html.ValidationMessageFor(model => model.Wed9, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed10)
+                            @Html.ValidationMessageFor(model => model.Wed10, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed11)
+                            @Html.ValidationMessageFor(model => model.Wed11, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed12)
+                            @Html.ValidationMessageFor(model => model.Wed12, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed13)
+                            @Html.ValidationMessageFor(model => model.Wed13, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed14)
+                            @Html.ValidationMessageFor(model => model.Wed14, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed15)
+                            @Html.ValidationMessageFor(model => model.Wed15, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed16)
+                            @Html.ValidationMessageFor(model => model.Wed16, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed17)
+                            @Html.ValidationMessageFor(model => model.Wed17, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed18)
+                            @Html.ValidationMessageFor(model => model.Wed18, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed19)
+                            @Html.ValidationMessageFor(model => model.Wed19, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed20)
+                            @Html.ValidationMessageFor(model => model.Wed20, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed21)
+                            @Html.ValidationMessageFor(model => model.Wed21, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed22)
+                            @Html.ValidationMessageFor(model => model.Wed22, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Wed23)
+                            @Html.ValidationMessageFor(model => model.Wed23, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.Raw("Thursday")</td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu0)
+                            @Html.ValidationMessageFor(model => model.Thu0, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu1)
+                            @Html.ValidationMessageFor(model => model.Thu1, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu2)
+                            @Html.ValidationMessageFor(model => model.Thu2, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu3)
+                            @Html.ValidationMessageFor(model => model.Thu3, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu4)
+                            @Html.ValidationMessageFor(model => model.Thu4, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu5)
+                            @Html.ValidationMessageFor(model => model.Thu5, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu6)
+                            @Html.ValidationMessageFor(model => model.Thu6, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu7)
+                            @Html.ValidationMessageFor(model => model.Thu7, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu8)
+                            @Html.ValidationMessageFor(model => model.Thu8, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu9)
+                            @Html.ValidationMessageFor(model => model.Thu9, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu10)
+                            @Html.ValidationMessageFor(model => model.Thu10, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu11)
+                            @Html.ValidationMessageFor(model => model.Thu11, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu12)
+                            @Html.ValidationMessageFor(model => model.Thu12, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu13)
+                            @Html.ValidationMessageFor(model => model.Thu13, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu14)
+                            @Html.ValidationMessageFor(model => model.Thu14, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu15)
+                            @Html.ValidationMessageFor(model => model.Thu15, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu16)
+                            @Html.ValidationMessageFor(model => model.Thu16, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu17)
+                            @Html.ValidationMessageFor(model => model.Thu17, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu18)
+                            @Html.ValidationMessageFor(model => model.Thu18, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu19)
+                            @Html.ValidationMessageFor(model => model.Thu19, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu20)
+                            @Html.ValidationMessageFor(model => model.Thu20, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu21)
+                            @Html.ValidationMessageFor(model => model.Thu21, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu22)
+                            @Html.ValidationMessageFor(model => model.Thu22, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Thu23)
+                            @Html.ValidationMessageFor(model => model.Thu23, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.Raw("Friday")</td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri0)
+                            @Html.ValidationMessageFor(model => model.Fri0, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri1)
+                            @Html.ValidationMessageFor(model => model.Fri1, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri2)
+                            @Html.ValidationMessageFor(model => model.Fri2, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri3)
+                            @Html.ValidationMessageFor(model => model.Fri3, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri4)
+                            @Html.ValidationMessageFor(model => model.Fri4, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri5)
+                            @Html.ValidationMessageFor(model => model.Fri5, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri6)
+                            @Html.ValidationMessageFor(model => model.Fri6, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri7)
+                            @Html.ValidationMessageFor(model => model.Fri7, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri8)
+                            @Html.ValidationMessageFor(model => model.Fri8, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri9)
+                            @Html.ValidationMessageFor(model => model.Fri9, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri10)
+                            @Html.ValidationMessageFor(model => model.Fri10, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri11)
+                            @Html.ValidationMessageFor(model => model.Fri11, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri12)
+                            @Html.ValidationMessageFor(model => model.Fri12, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri13)
+                            @Html.ValidationMessageFor(model => model.Fri13, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri14)
+                            @Html.ValidationMessageFor(model => model.Fri14, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri15)
+                            @Html.ValidationMessageFor(model => model.Fri15, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri16)
+                            @Html.ValidationMessageFor(model => model.Fri16, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri17)
+                            @Html.ValidationMessageFor(model => model.Fri17, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri18)
+                            @Html.ValidationMessageFor(model => model.Fri18, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri19)
+                            @Html.ValidationMessageFor(model => model.Fri19, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri20)
+                            @Html.ValidationMessageFor(model => model.Fri20, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri21)
+                            @Html.ValidationMessageFor(model => model.Fri21, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri22)
+                            @Html.ValidationMessageFor(model => model.Fri22, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Fri23)
+                            @Html.ValidationMessageFor(model => model.Fri23, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+        </tr>
+        <tr>
+            <td>@Html.Raw("Saturday")</td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat0)
+                            @Html.ValidationMessageFor(model => model.Sat0, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat1)
+                            @Html.ValidationMessageFor(model => model.Sat1, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat2)
+                            @Html.ValidationMessageFor(model => model.Sat2, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat3)
+                            @Html.ValidationMessageFor(model => model.Sat3, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat4)
+                            @Html.ValidationMessageFor(model => model.Sat4, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat5)
+                            @Html.ValidationMessageFor(model => model.Sat5, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat6)
+                            @Html.ValidationMessageFor(model => model.Sat6, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat7)
+                            @Html.ValidationMessageFor(model => model.Sat7, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat8)
+                            @Html.ValidationMessageFor(model => model.Sat8, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat9)
+                            @Html.ValidationMessageFor(model => model.Sat9, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat10)
+                            @Html.ValidationMessageFor(model => model.Sat10, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat11)
+                            @Html.ValidationMessageFor(model => model.Sat11, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat12)
+                            @Html.ValidationMessageFor(model => model.Sat12, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat13)
+                            @Html.ValidationMessageFor(model => model.Sat13, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat14)
+                            @Html.ValidationMessageFor(model => model.Sat14, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat15)
+                            @Html.ValidationMessageFor(model => model.Sat15, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat16)
+                            @Html.ValidationMessageFor(model => model.Sat16, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat17)
+                            @Html.ValidationMessageFor(model => model.Sat17, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat18)
+                            @Html.ValidationMessageFor(model => model.Sat18, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat19)
+                            @Html.ValidationMessageFor(model => model.Sat19, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat20)
+                            @Html.ValidationMessageFor(model => model.Sat20, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat21)
+                            @Html.ValidationMessageFor(model => model.Sat21, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat22)
+                            @Html.ValidationMessageFor(model => model.Sat22, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.Sat23)
+                            @Html.ValidationMessageFor(model => model.Sat23, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+    </table>
+    <br />
+    <br />
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save Changes" class="btn btn-default"  />
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

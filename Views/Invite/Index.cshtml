@@ -1,0 +1,49 @@
+﻿﻿@using CPP2.Controllers
+@using CPP2.Services
+@using Microsoft.AspNet.Identity
+@model List<CPP2.AspNetUser>
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    if (IsPost)
+    {
+        string toEmail = Request.Form["email"];
+        var fromEmail = "";
+        var fromName = "";
+        var fromUserId = User.Identity.GetUserId();
+        foreach (var u in Model)
+        {
+            if (u.Id.CompareTo(fromUserId) == 0)
+            {
+                fromEmail = u.UserName;
+                fromName = u.CppUsers.SingleOrDefault().Profiles.SingleOrDefault().FirstName + " " + u.CppUsers.SingleOrDefault().Profiles.SingleOrDefault().LastName;
+                break;
+            }
+        }
+        var message = "\nAn invitation from " + fromName + "\n\n http://localhost:61441/Home";
+        <text>
+            Invitation has been sent to: <br />
+            Email: @toEmail <br />>
+        </text>
+        @MessageService.SendEmailInvite(fromEmail, toEmail, message);
+    }
+}
+<table>
+    <tr>
+        <th>
+            <h3 style="color:darkred">Send an email invitation</h3>
+            <h4>Enter an email address below to invite a friend!</h4>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            @{
+                <form method="post">
+                    <input name="email" value=" " type="email" />
+                    <input type="submit" value="Send Invite" class="btn btn-default" />
+                </form>
+            }
+        </td>
+    </tr>
+</table>

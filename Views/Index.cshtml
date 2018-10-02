@@ -1,0 +1,1042 @@
+﻿@model IEnumerable<CPP2.AvailabilitySchedule>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>My Schedule</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday0)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday11)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday12)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday13)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday14)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday15)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday16)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday17)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday18)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday19)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday20)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday21)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday22)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sunday23)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon0)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon11)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon12)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon13)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon14)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon15)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon16)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon17)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon18)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon19)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon20)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon21)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon22)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mon23)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue0)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue11)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue12)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue13)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue14)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue15)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue16)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue17)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue18)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue19)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue20)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue21)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue22)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tue23)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed0)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed11)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed12)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed13)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed14)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed15)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed16)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed17)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed18)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed19)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed20)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed21)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed22)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wed23)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu0)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu11)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu12)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu13)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu14)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu15)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu16)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu17)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu18)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu19)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu20)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu21)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu22)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thu23)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri0)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri11)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri12)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri13)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri14)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri15)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri16)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri17)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri18)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri19)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri20)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri21)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri22)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fri23)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat0)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat11)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat12)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat13)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat14)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat15)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat16)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat17)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat18)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat19)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat20)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat21)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat22)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sat23)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CppUser.AspNetUserId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday0)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday11)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday12)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday13)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday14)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday15)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday16)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday17)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday18)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday19)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday20)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday21)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday22)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sunday23)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon0)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon11)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon12)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon13)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon14)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon15)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon16)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon17)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon18)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon19)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon20)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon21)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon22)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mon23)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue0)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue11)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue12)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue13)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue14)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue15)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue16)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue17)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue18)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue19)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue20)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue21)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue22)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tue23)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed0)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed11)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed12)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed13)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed14)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed15)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed16)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed17)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed18)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed19)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed20)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed21)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed22)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wed23)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu0)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu11)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu12)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu13)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu14)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu15)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu16)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu17)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu18)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu19)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu20)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu21)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu22)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thu23)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri0)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri11)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri12)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri13)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri14)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri15)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri16)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri17)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri18)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri19)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri20)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri21)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri22)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fri23)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat0)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat11)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat12)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat13)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat14)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat15)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat16)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat17)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat18)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat19)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat20)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat21)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat22)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sat23)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CppUser.AspNetUserId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,19 @@
+﻿@model string
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	var sessionId = Model;
+}
+	<br />
+	<h4>Join Conversation!</h4>
+
+
+@using (Html.BeginForm("StartSessionLog", "Call", FormMethod.Post))
+{
+    
+	<input type="hidden" name="session" value=@Request["session"]>
+	<input type="hidden" name="sender" value=@Request["sender"]>
+	<input type="hidden" name="recipient" value=@Request["recipient"]>
+    <input type="submit" class="btn btn-default" value="Open Video Chat" onclick="window.open('https://appr.tc/r/@sessionId','CPP Chat','width=800','height=800')">
+
+
+}

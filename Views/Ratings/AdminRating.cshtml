@@ -1,0 +1,109 @@
+﻿@model IEnumerable<CPP2.Rating>
+
+@{
+    ViewBag.Title = "AdminRating";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Administrator View for Rating</h2>
+
+<p>
+    
+    <button>@Html.ActionLink("Create a rating;Admin", "AdminCreateRating")</button>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RatedUserId)
+                <br />(Rated CppUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CppUser.AspNetUserId)
+                <br />(Rated AspNetUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RaterId)
+                <br />(Rater CppUser)
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CppUser.AspNetUser.Email)
+
+            </th>
+            <th>
+                <!-- @Html.DisplayNameFor(model => model.InterestingScore) -->
+                Interesting
+            </th>
+            <th>
+                <!--@Html.DisplayNameFor(model => model.ComprehensibleScore)-->
+                Comprehensible
+            </th>
+            <th>
+                <!--@Html.DisplayNameFor(model => model.PolitenessScore)-->
+                Polite
+            </th>
+            <th>
+                <!-- @Html.DisplayNameFor(model => model.AverageScore)-->
+                Average
+            </th>
+            <th>
+                <!-- @Html.DisplayNameFor(model => model.Comment)-->
+                Comments - optional
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CppUser.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CppUser.AspNetUserId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RaterId)
+                </td>
+               
+                    @if (item.CppUser.Profiles.Count() > 0)
+                    {
+                        <td>
+                        @Html.DisplayFor(modelItem => item.CppUser.Profiles.Single().FirstName)<br />
+                        @Html.DisplayFor(modelItem => item.CppUser.Profiles.Single().LastName)
+                        </td>
+                    }
+                    else
+                    {<td>
+                        <p>User has no name</p></td>
+                    }
+               
+                <td>
+                    @Html.DisplayFor(modelItem => item.CppUser.AspNetUser.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InterestingScore)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ComprehensibleScore)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PolitenessScore)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AverageScore)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Comment)
+                </td>
+                <td>
+                    <button>@Html.ActionLink("Details", "AdminDetails", new { id = item.Id }) </button>
+                    <br />
+                    <button>@Html.ActionLink("Delete", "AdminDeleteRating", new { id = item.Id })</button>
+                </td>
+            </tr>
+        }
+        </table>
+</p>
+

@@ -1,0 +1,50 @@
+﻿@model CPP2.Violation
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Report</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Violation</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @{
+            var emailIdList = new SelectList(ViewBag.EmailStringDict, "Key", "Value", "S");
+            var violationList = new SelectList(ViewBag.ViolationDict, "Key", "Value", "S");
+        }
+        
+        <div class="form-group">
+            @Html.Label("Violator", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ReportedId", emailIdList)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Violation", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ViolationId", violationList)
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Submit Report" class="btn btn-default" onclick="return confirm('Are you sure you want to report this violation?');"/>
+                <br /><br /><small><i>Example of defaming: A CPP user is saying inappopriate things about you to others.</i></small>
+                <br /><small><i>Example of verbal abuse: A CPP user is saying inappopriate things about to you via messages. </i></small>
+                <br /><small><i>Example of spamming: A CPP user is sending a large number of emails via video call or invite requests. </i></small>
+                <br /><small><i>Example of inappropriate during call: A CPP user is saying or doing inappropriate things during a conversation meeting. </i></small>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to Support", "Contact", "Home")
+</div>

@@ -1,0 +1,190 @@
+﻿﻿@model IEnumerable<CPP2.CppUser>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>User Profile</h2>
+
+<!--@Html.ActionLink("Administer page", "Admin")-->
+
+<table class="table">
+    @if (Model.Count() > 0)
+    {
+        <p>
+            @Html.ActionLink("Add Profile Picture", "AddImage")
+
+        </p>
+        foreach (var item in Model)
+        {
+
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().Photo)
+                </th>
+                <td>
+                    @{ byte[] photo = item.Profiles.SingleOrDefault().Photo;
+                        if (photo != null)
+                        {
+                            var base64 = Convert.ToBase64String(item.Profiles.SingleOrDefault().Photo);
+                            var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+                            @:<img src='@imgSrc' style="max-width:250px; max-height:200px;" />
+                        }
+                    }
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().FirstName)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().FirstName)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().LastName)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().LastName)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().Gender)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().Gender)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().Age)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().Age)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().PrimaryLanguge)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().PrimaryLanguge)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().LanguageLearning)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().LanguageLearning)
+                </td>
+            </tr>
+           
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().SpeakingAbility)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().SpeakingAbility)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().ComprehensionAbility)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().ComprehensionAbility)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().City)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().City)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().Country)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().Country)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().TimeZoneCode)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().TimeZoneCode)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().Desired_Hours)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().Desired_Hours)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().Interest1)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().Interest1)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().Interest2)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().Interest2)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().Interest3)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().Interest3)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().Interest4)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().Interest4)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().Interest5)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().Interest5)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profiles.Single().PreferredGender)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profiles.Single().PreferredGender)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                </td>
+            </tr>
+                            }
+                        }
+                        else
+                        {
+                            @Html.ActionLink("Create New", "Create")
+                        }
+</table>

@@ -1,0 +1,116 @@
+﻿@using CPP2.Controllers
+@using CPP2.Services
+@using Microsoft.AspNet.Identity
+@model List<CPP2.Profile>
+@{
+	ViewBag.Title = "Call";
+}
+
+<h2>Call a Conversation Partner now!</h2>
+
+<table class="table">
+	<tr>
+		<th>
+			<h4>Name</h4>
+		</th>
+		<th>
+			<h4>Email</h4>
+		</th>
+		<th>
+			<h4>Desired Hours per week</h4>
+		</th>
+		<th>
+			<h4>Location</h4>
+		</th>
+		<th>
+			<h4>Video Call</h4>
+		</th>
+		<th>
+			<h4>Audio Call</h4>
+		</th>
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@if (item != null)
+				{
+					@Html.DisplayFor(modelItem => item.FirstName)<br />
+					@Html.DisplayFor(modelItem => item.LastName)
+				}
+				else
+				{
+					<p>No Name</p>
+				}
+			</td>
+			<td>
+				@if (item.CppUser.AspNetUser != null)
+				{
+					@Html.DisplayFor(modelItem => item.CppUser.AspNetUser.Email)
+				}
+				else
+				{
+					<p>No Email</p>
+				}
+			</td>
+			<td>
+				@if (item.Desired_Hours > 0)
+				{
+					@Html.DisplayFor(modelItem => item.Desired_Hours)
+				}
+				else
+				{
+					<p>No Desired Hours</p>
+				}
+			</td>
+			<td>
+				@if (!item.City.IsEmpty())
+				{
+					@Html.DisplayFor(modelItem => item.City)<br />
+					@Html.DisplayFor(modelItem => item.State)<br />
+					@Html.DisplayFor(modelItem => item.Country)
+				}
+				else
+				{
+					<p>No Location</p>
+				}
+			</td>
+			<td>
+				@if (item.CppUser.AspNetUser.Email.Length > 0)
+				{
+					var sessionId = User.Identity.GetUserId() + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString() + DateTime.Now.Millisecond.ToString();
+					var receiverEmail = item.CppUser.AspNetUser.Email;
+
+
+					using (Html.BeginForm("SendEmailRequest", "Call", FormMethod.Post))
+					{
+						<input type="hidden" name="sessionId" value=@sessionId>
+						<input type="hidden" name="recipientEmail" value=@receiverEmail>	
+                        var convoTheme = "Suggested conversation theme is ... " + Html.Action("getTheme");
+                        
+                        <input type="submit" class="btn btn-default" value="Video Call" onclick="window.open('https://appr.tc/r/@sessionId','CPP Chat','width=800','height=800'); alert('@convoTheme');">
+                    }
+
+                }
+                else
+                {
+					<p>Cannot make a video call to this user. No email found.</p>
+				}
+			</td>
+			<td>
+				<button class="btn-default" type="submit">@Html.ActionLink("Audio Call", "MakeTwilioCall")</button>
+			</td>
+		</tr>
+	}
+</table>
+<!--
+<p>
+	<button>@Html.ActionLink("MakeTwilioCall() to Caroline", "MakeTwilioCall")</button>
+	<br />
+</p>
+<p>
+
+	<button>@Html.ActionLink("MakeGoogleCalendarCall()", "MakeGoogleCalendarCall")</button>
+	<br />
+</p>-->

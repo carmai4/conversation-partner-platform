@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "MakeTwilioCall";
+}
+
+<center>
+    <br />
+    <img src="~/Content/audio_call_image.png" width="200" height="200" />
+    <br />
+    <h2>You are currently using Twilio Voice Call</h2><img src="~/Content/CPPlogo1.png" width="200" height="200" />
+    <h3>
+        Suggested conversation theme is ...
+        @{ 
+            Html.RenderAction("getTheme");
+        }
+    </h3>
+</center>
+

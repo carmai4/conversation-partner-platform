@@ -1,0 +1,59 @@
+﻿@model IEnumerable<CppUser>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p>
+<h2>Your Matches</h2>
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            Name            
+        </th>
+        <th>
+           Schedule Match
+        </th>
+        <th>
+            Interest Match
+        </th>
+        <th>
+            Email
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Profiles.FirstOrDefault().FirstName)
+            @Html.DisplayFor(modelItem => item.Profiles.FirstOrDefault().LastName)
+
+        </td>
+        <td>
+            
+            @Html.DisplayFor(modelItem => item.matchsum) @Html.Raw("%")
+            <br />
+            @Html.DisplayFor(modelItem => item.Profiles.FirstOrDefault().FirstName)
+            @Html.Raw("'s schedule matches yours for ")
+            @Html.DisplayFor(modelItem => item.matchtotal)
+            @Html.Raw(" hours per week.")
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.interestmatchsum)@Html.Raw("% interest match")
+        <td>
+            @Html.DisplayFor(modelItem => item.AspNetUser.Email)
+        </td>
+
+
+        <td>
+            @Html.ActionLink("Add Contact", "Add", "Contacts", new { id=item.Id }, null) 
+            
+        </td>
+    </tr>
+}
+
+</table>

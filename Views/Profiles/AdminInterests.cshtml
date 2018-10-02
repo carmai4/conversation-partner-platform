@@ -1,0 +1,29 @@
+﻿﻿@model IEnumerable<CPP2.UserInterest>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Admin Edit Profile</h2>
+<p>
+    @Html.ActionLink("Add a new Interest", "AddInterest")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Interest)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Interest)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditInterest", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "DeleteInterest", new { id = item.Id })
+            </td>
+        </tr>
+    }
+</table>

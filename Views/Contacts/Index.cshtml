@@ -1,0 +1,44 @@
+﻿@model List<CPP2.CppUser>
+
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Contacts</h2>
+
+<table class="table">
+    <tr>
+        <th>
+           Name
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+             @Html.DisplayFor(modelItem => item.Profiles.SingleOrDefault().FirstName)
+             @Html.Raw(" ")
+             @Html.DisplayFor(modelItem => item.Profiles.SingleOrDefault().LastName)   
+                
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.AspNetUser.Email)
+            </td>
+
+            <td>
+                @Html.ActionLink("Delete Contact", "Delete", new { id = item.Id })<br />
+                @Html.ActionLink("View Profile", "ViewProfile", new { id = item.Id })
+            </td>
+        </tr>
+    }
+</table>

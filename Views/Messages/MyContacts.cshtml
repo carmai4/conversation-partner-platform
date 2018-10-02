@@ -1,0 +1,27 @@
+﻿@model IEnumerable<CPP2.CppUser>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>My Contacts</h2>
+
+<table class="table">
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Profiles.SingleOrDefault().FirstName)
+                @Html.DisplayFor(modelItem => item.Profiles.SingleOrDefault().LastName)
+
+
+            </td>
+            <td align="left">
+                @Html.ActionLink("New Message", "Send", new { ReceiverId = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

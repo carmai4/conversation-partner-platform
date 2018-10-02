@@ -1,0 +1,50 @@
+﻿@model IEnumerable<CPP2.SessionLog>
+
+@{
+	ViewBag.Title = "Session Logs";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Session Log History</h2>
+
+<table class="table">
+	<tr>
+		<th>
+			Session Initiated
+		</th>
+		<th>
+			Session String Used
+		</th>
+		<th>
+			Sender
+		</th>
+		<th>
+			Receiver
+		</th>
+		<th>
+			Date
+		</th>
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.SessionBegin)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.SessionString)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.CppUser.AspNetUser.Email)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.CppUser1.AspNetUser.Email)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Date).ToString()
+			</td>
+		</tr>
+	}
+
+</table>

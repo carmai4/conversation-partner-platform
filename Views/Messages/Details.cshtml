@@ -1,0 +1,35 @@
+﻿@model IEnumerable<CPP2.Message>
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @if (item.SenderId == item.CppUser1.Id)
+                {
+                    @Html.DisplayFor(modelItem => item.CppUser1.Profiles.SingleOrDefault().FirstName)
+                    <text> </text>
+                    @Html.DisplayFor(modelItem => item.CppUser1.Profiles.SingleOrDefault().LastName)
+                    <text>: </text>
+                }
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message1)
+                <br />
+            </td>
+        </tr>
+    }
+
+    @if (!Model.FirstOrDefault().partner.Equals(null))
+    {
+        @Html.ActionLink("New message", "Send", new { ReceiverId = Model.FirstOrDefault().partner })
+    }
+
+</table>

@@ -1,0 +1,51 @@
+﻿@model CPP2.Violation
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Violation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ReporterId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReporterId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ViolationId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ViolationId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CppUser.AspNetUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CppUser.AspNetUserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CppUser1.AspNetUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CppUser1.AspNetUserId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

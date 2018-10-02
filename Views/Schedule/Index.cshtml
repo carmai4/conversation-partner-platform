@@ -1,0 +1,912 @@
+﻿@model IEnumerable<CPP2.AvailabilitySchedule>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>My Schedule</h2>
+
+@if (Model.Count() > 0)
+{
+    foreach (var item in Model)
+    {
+        <p>
+            @Html.ActionLink("Edit My Schedule", "Edit")
+        </p>
+
+<table width="100%">
+    <tr>
+        <td> </td>
+        <td>@Html.Raw("1 am")</td>
+        <td>@Html.Raw("2 am")</td>
+        <td>@Html.Raw("3 am")</td>
+        <td>@Html.Raw("4 am")</td>
+        <td>@Html.Raw("5 am")</td>
+        <td>@Html.Raw("6 am")</td>
+        <td>@Html.Raw("7 am")</td>
+        <td>@Html.Raw("8 am")</td>
+        <td>@Html.Raw("9 am")</td>
+        <td>@Html.Raw("10 am")</td>
+        <td>@Html.Raw("11 am")</td>
+        <td>@Html.Raw("12 pm")</td>
+        <td>@Html.Raw("1 pm")</td>
+        <td>@Html.Raw("2 pm")</td>
+        <td>@Html.Raw("3 pm")</td>
+        <td>@Html.Raw("4 pm")</td>
+        <td>@Html.Raw("5 pm")</td>
+        <td>@Html.Raw("6 pm")</td>
+        <td>@Html.Raw("7 pm")</td>
+        <td>@Html.Raw("8 pm")</td>
+        <td>@Html.Raw("9 pm")</td>
+        <td>@Html.Raw("10 pm")</td>
+        <td>@Html.Raw("11 pm")</td>
+        <td>@Html.Raw("12 am")</td>
+
+
+    </tr>
+    
+    <tr>
+        <td>@Html.Raw("Sunday ")</td>
+
+
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday0)
+
+                    </td>
+
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday1)
+
+                    </td>
+
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday2)
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday3)
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday4)
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday5)
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday6)
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday7)
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday8)
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday9)
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday10)
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday11)
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday12)
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday13)
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday14)
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday15)
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday16)
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday17)
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday18)
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday19)
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday20)
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday21)
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday22)
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Sunday23)
+
+                    </td>
+
+    </tr>
+    <tr>
+
+        <td>@Html.Raw("Monday")</td>
+        <td>
+
+                
+                    
+                        @Html.DisplayFor(model => model.SingleOrDefault().Mon0)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon1)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon2)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon3)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon4)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon5)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon6)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon0)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon8)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon9)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon10)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon11)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon12)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon13)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon14)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon15)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon16)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon17)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon18)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon19)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon20)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon21)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon22)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Mon23)
+
+        </td>
+    </tr>
+    <tr>
+        <td>@Html.Raw("Tuesday")</td>
+        <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Tue0)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue1)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue2)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue3)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue4)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue5)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue6)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue7)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue8)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue9)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue10)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue11)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue12)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue13)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue14)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue15)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue16)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue17)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue18)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue19)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue20)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue21)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue22)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Tue23)
+
+        </td>
+    </tr>
+    <tr>
+        <td>@Html.Raw("Wednesday")</td>
+        <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Wed0)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed1)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed2)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed3)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed4)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed5)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed6)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed7)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed8)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed9)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed10)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed11)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed12)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed13)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed14)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed15)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed16)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed17)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed18)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed19)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed20)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed21)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed22)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Wed23)
+
+        </td>
+    </tr>
+    <tr>
+        <td>@Html.Raw("Thursday")</td>
+        <td>
+
+                        @Html.DisplayFor(model => model.SingleOrDefault().Thu0)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu1)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu2)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu3)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu4)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu5)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu6)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu7)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu8)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu9)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu10)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu11)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu12)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu13)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu14)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu15)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu16)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu17)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu18)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu19)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu20)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu21)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu22)
+
+        </td>
+        <td>
+                
+            @Html.DisplayFor(model => model.SingleOrDefault().Thu23)
+
+        </td>
+    </tr>
+    <tr>
+        <td>@Html.Raw("Friday")</td>
+        <td>
+            
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri0)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri1)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri2)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri3)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri4)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri5)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri6)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri7)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri8)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri9)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri10)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri11)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri12)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri13)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri14)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri15)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri16)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri17)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri18)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri19)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri20)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri21)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri22)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Fri23)
+
+
+    </tr>
+    <tr>
+        <td>@Html.Raw("Saturday")</td>
+        <td>
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat0)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat1)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat2)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat3)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat4)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat5)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat6)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat7)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat8)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat9)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat10)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat11)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat12)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat13)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat14)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat15)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat16)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat17)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat18)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat19)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat20)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat21)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat22)
+
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.SingleOrDefault().Sat23)
+        </td>
+    </tr>
+</table>}
+}
+else
+{
+    @Html.ActionLink("Create New", "Create")
+
+}
