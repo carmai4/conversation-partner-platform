@@ -131,13 +131,11 @@ namespace CPP2.Controllers
 
 		public ActionResult MakeTwilioCall()
 		{
-			const string ACCOUNT_SID_Live = "AC46d0e0f69a193b07971e097acaf83492";
-			//const string ACCOUNT_SID_Test = "ACc6d4a6b356623b01abc77875d04dc35d";
-			const string ACCOUNT_SID_928 = "PNb64a69077177857068b230f464db26b4";
-			const string AUTH_TOKEN_Live = "289c300132612448d804f7a64377b73f";
-			//const string AUTH_TOKEN_Test = "d917a813c302359c357b42e84694df19";
-			const string Twilio_928 = "+19282373669"; //Twilio number
-			const string Caroline = "+15712321174"; //Caroline
+			const string ACCOUNT_SID_Live = "";
+			const string ACCOUNT_SID_928 = "";
+			const string AUTH_TOKEN_Live = "";
+			const string Twilio_928 = ""; //Twilio number
+			const string Caroline = ""; //Caroline
 													//const string Harrison = "+12533487919"; //Harrison
 			try
 			{
